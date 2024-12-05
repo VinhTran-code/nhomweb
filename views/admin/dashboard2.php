@@ -55,6 +55,7 @@
     <ul class="nav navbar-nav navbar-right">
       <li><a href="dashboard.php"><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
     </ul>
+    <p>Hello, <?php echo $_SESSION['user']['username']; ?>!</p>
   </div>
 </nav>
 </body>
