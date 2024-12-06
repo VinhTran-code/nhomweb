@@ -11,7 +11,6 @@ class AdminController {
     private $userModel;
 
     public function __construct() {
-        // Khởi tạo đối tượng User với đối tượng Database
         $this->userModel = new User(new Database());
     }
 
@@ -22,7 +21,7 @@ class AdminController {
 
             if ($this->userModel->authenticate($username, $password)) {
                 $_SESSION['username'] = $username;
-                header('Location: dashboard.php');
+                header('Location: dashboard2.php');
                 exit();
             } else {
                 $error = "Invalid username or password.";

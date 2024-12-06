@@ -1,11 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION['username'])) {
-    // Nếu người dùng chưa đăng nhập, chuyển hướng đến trang login
-    header('Location: login.php');
-    exit();
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,17 +29,12 @@ if (!isset($_SESSION['username'])) {
     </form>
     
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+      <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
       <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- <div class="container">
-  <h2>Welcome to the Dashboard, <?php echo $_SESSION['username']; ?>!</h2>
-  <p>This is your dashboard, where you can manage your account and view news.</p>
-  
-</div> -->
 
 </body>
 </html>
